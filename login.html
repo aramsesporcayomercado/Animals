@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Animals</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link type="image/png" sizes="96x96" rel="icon" href="img/login.png">
+    
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="register()">Registro</button>
+            </div>
+            <div class="image">
+                <img src="img/logo1.JPG" width="370px" height="312px" style="opacity:50% ;"/>
+            </div>
+        <form id="login" class="input-group" action="validar.php" method="post">
+            <input type="text" class="input-field" placeholder="ingresa tu usuario" name="usuario" required>
+            <input type="password" class="input-field" placeholder="ingresa tu password" name="contraseña" required>
+            <input type="checkbox" class="check-box">Recordar la contraseña
+            <!--<button type="submit" class="submit-btn">Login</button>-->
+            <button type="submit" class="submit-btn" id="myDIV" style="cursor:wait">Login</button>
+            <a href="modifica_contrasena.php"> ¿Olvidaste tu contraseña?</a>
+        </form>
+        <form id="register" class="input-group" action="registro.php" method="post">
+            <h3>Ingrese su qr </h3>
+            <input type="text" class="input-field" placeholder="ingresa tu codigo qr" name="qr" required>
+            <button type="submit" class="submit-btn">Enviar</button>
+        </div>
+    </div>
+
+
+<script>
+    var x =document.getElementById("login");
+    var y =document.getElementById("register");
+    var z =document.getElementById("btn");
+
+    function register() {
+        x.style.left ="-400px";
+        y.style.left ="50px";
+        z.style.left = "110px";
+    }
+
+    function login() {
+        x.style.left ="50px";
+        y.style.left ="450px";
+        z.style.left = "0px";
+    }
+
+
+
+
+
+</script>
+
+</body>
+</html>

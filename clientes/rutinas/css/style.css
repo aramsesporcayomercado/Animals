@@ -1,0 +1,46 @@
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #0000ff;
+    border-radius: 10px;
+    background-position: 10px;
+    resize: vertical;
+    display: block;
+
+
+}
+
+body {
+    background-color: powderblue;
+}
+
+button {
+    padding: 10px 24px;
+    text-decoration: none;
+    margin: 4px 2px;
+    height: 40px;
+    border-radius: 10px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #828282;
+}
+
+input:focus {
+    border: 4px solid #0000ff;
+    border-radius: 7px;
+}
+
+.container {
+    border-radius: 4px;
+    background-color: #B5B2B2;
+    padding: 18px;
+    width: 500px;
+    margin: auto;
+}
